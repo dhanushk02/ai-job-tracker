@@ -8,7 +8,7 @@ function App() {
   const [chatInput, setChatInput] = useState("");
   const [chatResponse, setChatResponse] = useState("");
   const sendChat = () => {
-    fetch("http://127.0.0.1:8000/chat?query=" + chatInput, {
+    fetch("https://ai-job-tracker-06uz.onrender.com/chat?query=" + chatInput, {
       method: "POST"
     })
       .then(res => res.json())
@@ -16,14 +16,14 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/jobs")
+    fetch("https://ai-job-tracker-06uz.onrender.com/jobs")
       .then(res => res.json())
       .then(data => setJobs(data));
     loadApplications();
   }, []);
 
   const loadApplications = () => {
-    fetch("http://127.0.0.1:8000/applications")
+    fetch("https://ai-job-tracker-06uz.onrender.com/applications")
       .then(res => res.json())
       .then(data => setApplications(data));
   };
@@ -42,7 +42,7 @@ function App() {
   };
 
   const sendStatus = (status) => {
-    fetch(`http://127.0.0.1:8000/apply?job_id=${selectedJob.id}&status=${status}`, {
+    fetch(`https://ai-job-tracker-06uz.onrender.com/apply?job_id=${selectedJob.id}&status=${status}`, {
       method: "POST"
     }).then(loadApplications);
 
@@ -51,7 +51,7 @@ function App() {
   };
 
   const updateStatus = (jobId, status) => {
-    fetch(`http://127.0.0.1:8000/applications/update?job_id=${jobId}&status=${status}`, {
+    fetch(`https://ai-job-tracker-06uz.onrender.com/applications/update?job_id=${jobId}&status=${status}`, {
       method: "PUT"
     }).then(loadApplications);
   };
