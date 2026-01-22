@@ -108,3 +108,7 @@ uvicorn backend.main:app --reload
 ## Live Demo
 - Frontend: https://ai-job-tracker-phi.vercel.app/
 - Backend: https://ai-job-tracker-06uz.onrender.com
+https://ai-job-tracker-06uz.onrender.com/jobs
+https://ai-job-tracker-06uz.onrender.com/docs
+https://ai-job-tracker-06uz.onrender.com/applications
+
