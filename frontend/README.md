@@ -106,5 +106,5 @@ pip install fastapi uvicorn
 uvicorn backend.main:app --reload
 
 ## Live Demo
-- Frontend: (Add Vercel link)
-- Backend: (Add Render/Railway link)
+- Frontend: https://ai-job-tracker-phi.vercel.app/
+- Backend: https://ai-job-tracker-06uz.onrender.com
