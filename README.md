@@ -104,6 +104,7 @@ AI Matching & Rule-based Assistant
 ```bash
 pip install fastapi uvicorn
 uvicorn backend.main:app --reload
+```
 
 ## Live Demo
 - Frontend: https://ai-job-tracker-phi.vercel.app/
@@ -111,4 +112,5 @@ uvicorn backend.main:app --reload
 https://ai-job-tracker-06uz.onrender.com/jobs
 https://ai-job-tracker-06uz.onrender.com/docs
 https://ai-job-tracker-06uz.onrender.com/applications
+
 
